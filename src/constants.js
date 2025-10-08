@@ -36,7 +36,7 @@ import npicLogo from './assets/education_logo/npic.png';
 // Project Section Logo's
 import wanderlustLogo from './assets/work_logo/wanderlust.png';
 import weatherLogo from './assets/work_logo/weather.png';
-import paperLogo from './assets/work_logo/paper.png';
+import artifyLogo from './assets/work_logo/artify.png';
 
 export const SkillsInfo = [
     {
@@ -154,6 +154,16 @@ export const education = [
 export const projects =[
     {
         id: 0,
+        title: "Artify (Text to Image Converter)",
+        description: 
+           "Developed Artify, a full-stack MERN app that converts text prompts into styled visuals with secure authentication and a credit-based model. Integrated Razorpay for smooth premium transactions and implemented a responsive React frontend with a Node.js/Express backend and MongoDB for seamless performance.",
+        image: artifyLogo,
+        tags: ["JavaScript","React.js","Tailwind CSS","Node.js","Express.js","MongoDB","JWT","API","Razorpay API"],
+        github: "https://github.com/anuritik/Artify",
+        webapp: "https://artify-lake.vercel.app/",
+    },
+    {
+        id: 1,
         title: "Full-Stack WanderLust Website",
         description:
           " Developed and deployed a full-stack travel listing app (Wanderlust) with CRUD operations, secure Passport.js authentication, and session management, built on an MVC architecture with EJS and MongoDB for scalable routing and efficient data handling. Optimized middleware, error handling, and a responsive Bootstrap UI to enhance reliability, maintainability, and cross-device usability.",
@@ -163,7 +173,7 @@ export const projects =[
         webapp: "https://anuragshukla-project.onrender.com/",
     },
     {
-        id: 1,
+        id: 2,
         title: "Weatherly Weather Website",
         description:
            "Weatherly is a React.js-based web application styled with Bootstrap that allows users to search for any city and instantly view real-time weather details such as temperature, humidity, and conditions. The app integrates with a weather API to fetch and display accurate data, providing a simple and responsive interface for an enhanced user experience.",
@@ -171,15 +181,5 @@ export const projects =[
         tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "API", "React JS"],
         github: "https://github.com/anuritik/Weatherly-app",
         webapp: "https://weatherly-app-psi.vercel.app/",
-    },
-    {
-        id: 2,
-        title: "Hybrid Food Detection System",
-        description: 
-           "This project is based on Research Paper,In this project we developed a hybrid food detection system combining YOLO-v9 for fast object localization and RCNN for accurate classification.The model enhances detection precision and efficiency, enabling real-time identification of multiple food items.",
-        image: paperLogo,
-        tags: ["Python","Artificial intelligence", "Machine Learning", "Statistics"],
-        github: "https://github.com/anuritik/major-project",
-        webapp: "https://drive.google.com/file/d/1qFNByIgDnRLphZl6bWLCBJeU67uBaIxb/view?usp=sharing",
     },
 ];

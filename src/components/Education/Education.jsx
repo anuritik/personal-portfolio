@@ -1,9 +1,15 @@
 import React from "react";
 import { education } from "../../constants";
+import { motion } from "framer-motion";
 
 const Education = () =>{
     return (
-        <section id="education" className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-3">
+        <motion.section
+        initial={{opacity:0.2,y:100}}
+        transition={{duration:1}}
+        whileInView={{opacity:1, y:0}}
+        viewport={{once:true}}
+        id="education" className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-3">
             {/* Section Title */}
             <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold text-white">EDUCATION</h2>
@@ -69,7 +75,7 @@ const Education = () =>{
                     ))
                 }
             </div>
-        </section>
+        </motion.section>
     );
 }
 

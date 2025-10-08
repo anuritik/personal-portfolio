@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { projects } from "../../constants";
+import { motion } from "framer-motion";
 
 const Work = () =>{
     const [selectedProject, setSelectedProject] = useState(null);
@@ -14,7 +15,12 @@ const Work = () =>{
 
 
     return (
-        <section id="work" className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans relative">
+        <motion.section
+        initial={{opacity:0.2,y:100}}
+        transition={{duration:1}}
+        whileInView={{opacity:1, y:0}}
+        viewport={{once:true}}
+        id="work" className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans relative">
             {/* Section Title */}
             <div className="text-center mb-16">
                 <h2 className="text-4xl font-bold text-white">PROJECTS</h2>
@@ -126,7 +132,7 @@ const Work = () =>{
                     </div>
                 )
             }
-        </section>
+        </motion.section>
     );
 }
 

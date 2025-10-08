@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 const Contact = () =>{
     const form = useRef();
@@ -47,7 +48,12 @@ const Contact = () =>{
     };
 
     return (
-        <section id="education" className="flex flex-col items-center justify-center py-24 px-[12vw] md:px-[7vw] lg:px-[20vw]">
+        <motion.section
+        initial={{opacity:0.2,y:100}}
+        transition={{duration:1}}
+        whileInView={{opacity:1, y:0}}
+        viewport={{once:true}}
+        id="education" className="flex flex-col items-center justify-center py-24 px-[12vw] md:px-[7vw] lg:px-[20vw]">
 
             {/* Toast Container */}
              <ToastContainer />
@@ -106,7 +112,7 @@ const Contact = () =>{
                 </form>
             </div>
 
-        </section>
+        </motion.section>
     );
 }
 

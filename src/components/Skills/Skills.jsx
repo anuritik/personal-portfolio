@@ -2,10 +2,16 @@
 import React from "react";
 import { SkillsInfo } from "../../constants.js";
 import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion"
 
 const Skills = () =>{
     return (
-        <section id="skills" className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient clip-path-custom">
+        <motion.section 
+        initial={{opacity:0.2,y:100}}
+        transition={{duration:1}}
+        whileInView={{opacity:1, y:0}}
+        viewport={{once:true}}
+        id="skills" className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient clip-path-custom">
             {/* Section Title */}
             <div className="text-center mb-8">
                 <h2 className="text-3xl sm:text-4xl font-bold text-white">SKILLS</h2>
@@ -14,7 +20,12 @@ const Skills = () =>{
                 A collection of my technical skills & expertise developed through various projects and experiences</p>
             </div>
             {/* Skill Categories */}
-            <div className="flex flex-wrap gap-1 lg:gap-5 py-10 justify-between">
+            <motion.div 
+            initial={{opacity:0.2,y:100}}
+            transition={{duration:1}}
+            whileInView={{opacity:1, y:0}}
+            viewport={{once:true}}
+            className="flex flex-wrap gap-1 lg:gap-5 py-10 justify-between">
                 {
                     SkillsInfo.map((category) => (
                         <div
@@ -55,8 +66,8 @@ const Skills = () =>{
                         </div>
                     ))
                 }
-            </div>
-        </section>
+            </motion.div>
+        </motion.section>
     );
 }
 
