@@ -64,7 +64,7 @@ const About = () =>{
            </motion.p>
            {/* Resume Button */}
            <a
-            href="https://drive.google.com/file/d/1rQkr8qVArNifIv0DcnYmDLkRmGiIFdqx/view?usp=sharing"
+            href="https://drive.google.com/file/d/1viQdld7TUkkP0eyU2F6wgO4xr9e2tWOg/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"

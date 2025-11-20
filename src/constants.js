@@ -37,6 +37,7 @@ import npicLogo from './assets/education_logo/npic.png';
 import wanderlustLogo from './assets/work_logo/wanderlust.png';
 import weatherLogo from './assets/work_logo/weather.png';
 import artifyLogo from './assets/work_logo/artify.png';
+import pingupLogo from './assets/work_logo/pingup.png'
 
 export const SkillsInfo = [
     {
@@ -154,6 +155,17 @@ export const education = [
 export const projects =[
     {
         id: 0,
+        title: "Pingup- Social Media Platform",
+        description: 
+           "Pingup is a full-stack social media platform offering fast, real-time messaging and notifications powered by SSE. It uses Inngest for automated tasks like 24-hour story expiration and transactional emails, with secure authentication via Clerk. Optimized media handling and scalable APIs ensure a smooth, high-performance user experience.",
+        image: pingupLogo,
+        tags: ["React.js", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "Inngest", "Redux", "Clerk", "ImageKit"],
+        github: "https://github.com/anuritik/PingUp",
+        webapp: "https://ping-up-beryl.vercel.app/",
+    },
+
+    {
+        id: 1,
         title: "Artify (Text to Image Converter)",
         description: 
            "Developed Artify, a full-stack MERN app that converts text prompts into styled visuals with secure authentication and a credit-based model. Integrated Razorpay for smooth premium transactions and implemented a responsive React frontend with a Node.js/Express backend and MongoDB for seamless performance.",
@@ -162,8 +174,9 @@ export const projects =[
         github: "https://github.com/anuritik/Artify",
         webapp: "https://artify-lake.vercel.app/",
     },
+
     {
-        id: 1,
+        id: 2,
         title: "Full-Stack WanderLust Website",
         description:
           " Developed and deployed a full-stack travel listing app (Wanderlust) with CRUD operations, secure Passport.js authentication, and session management, built on an MVC architecture with EJS and MongoDB for scalable routing and efficient data handling. Optimized middleware, error handling, and a responsive Bootstrap UI to enhance reliability, maintainability, and cross-device usability.",
@@ -173,7 +186,7 @@ export const projects =[
         webapp: "https://anuragshukla-project.onrender.com/",
     },
     {
-        id: 2,
+        id: 3,
         title: "Weatherly Weather Website",
         description:
            "Weatherly is a React.js-based web application styled with Bootstrap that allows users to search for any city and instantly view real-time weather details such as temperature, humidity, and conditions. The app integrates with a weather API to fetch and display accurate data, providing a simple and responsive interface for an enhanced user experience.",
