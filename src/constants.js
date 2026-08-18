@@ -40,6 +40,7 @@ import artifyLogo from "./assets/work_logo/artify.png";
 import pingupLogo from "./assets/work_logo/pingup.png";
 import chatappLogo from "./assets/work_logo/chat-app.png";
 import emsLogo from "./assets/work_logo/ems.png";
+import builderAILogo from "./assets/work_logo/builderAI.png";
 
 export const SkillsInfo = [
   {
@@ -174,6 +175,24 @@ export const projects = [
   },
   {
     id: 1,
+    title: "BuilderAI",
+    description:
+      "BuilderAI is an AI-powered platform that transforms natural language prompts into fully functional React websites. Powered by OpenRouter AI and Sandpack, users can generate, preview, and edit structured React projects in real time. Projects can also be exported as ZIP files or published through a shareable public link.",
+    image: builderAILogo,
+    tags: [
+      "React.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "OpenRoute",
+      "Sandpack",
+      "JSZip",
+    ],
+    github: "https://github.com/anuritik/builder-ai",
+    webapp: "https://builder-ai-seven.vercel.app",
+  },
+  {
+    id: 2,
     title: "Pingup- Social Media Platform",
     description:
       "Pingup is a full-stack social media platform offering fast, real-time messaging and notifications powered by SSE. It uses Inngest for automated tasks like 24-hour story expiration and transactional emails, with secure authentication via Clerk. Optimized media handling and scalable APIs ensure a smooth, high-performance user experience.",
@@ -194,7 +213,7 @@ export const projects = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "Artify (Text to Image Converter)",
     description:
       "Developed Artify, a full-stack MERN app that converts text prompts into styled visuals with secure authentication and a credit-based model. Integrated Razorpay for smooth premium transactions and implemented a responsive React frontend with a Node.js/Express backend and MongoDB for seamless performance.",
@@ -215,7 +234,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Full-Stack WanderLust Website",
     description:
       " Developed and deployed a full-stack travel listing app (Wanderlust) with CRUD operations, secure Passport.js authentication, and session management, built on an MVC architecture with EJS and MongoDB for scalable routing and efficient data handling. Optimized middleware, error handling, and a responsive Bootstrap UI to enhance reliability, maintainability, and cross-device usability.",
@@ -233,7 +252,7 @@ export const projects = [
     webapp: "https://anuragshukla-project.onrender.com/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Weatherly Weather Website",
     description:
       "Weatherly is a React.js-based web application styled with Bootstrap that allows users to search for any city and instantly view real-time weather details such as temperature, humidity, and conditions. The app integrates with a weather API to fetch and display accurate data, providing a simple and responsive interface for an enhanced user experience.",
@@ -243,7 +262,7 @@ export const projects = [
     webapp: "https://weatherly-app-psi.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "QuickChat - Real Time Chat",
     description:
       "QuickChat is a real-time chatting website built with the MERN stack and Socket.io. It enables instant messaging, media sharing, and seamless communication with a responsive interface. Designed for scalability and speed, QuickChat ensures smooth user experiences with secure authentication and efficient data handling.",
